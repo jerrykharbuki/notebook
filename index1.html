@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task List</title>
+  <style>
+    body {
+      background-color: #1f4158;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+   input {
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      margin-right: 10px;
+    }
+
+    button {
+      padding: 10px 15px;
+      border-radius: 8px;
+      border: none;
+      background: #eadcdc;
+      color: #1f4158;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <input type="text" id="taskInput" placeholder="Add Task">
+    <button onclick="addTask()">ADD your thought</button>
+  </div>
+
+  <ul id="taskList"></ul>
+
+</body>
+</html>
